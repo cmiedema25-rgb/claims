@@ -1,0 +1,30 @@
+artifacts = ["/app/reserves.json"]
+schema_version = "2.0"
+
+[task]
+name = "insight/censored-claims-reserving"
+description = "Estimate a censored claims model with event effects and a persistent latent calendar process; reserve claims and pools across correlated cohorts."
+
+[metadata]
+category = "Operations"
+subcategory = "Claims"
+tags = ["claims", "reserving", "censoring", "event-dependence", "calendar-dependence", "latent-state", "portfolio-risk"]
+expert_time_estimate_hours = 8
+relevant_experience = "Property claims actuaries and reserving analysts who fit censored claim development models, account for catastrophe-level dependence, and estimate aggregate outstanding loss distributions."
+difficulty_explanation = "The data is synthetic and the task models the work of a property claims reserving actuary. Censored observations mix two latent claim populations with independent event effects and a persistent calendar process. Estimating common parameters requires a joint marginal likelihood across historical cohorts, rather than separate event fits or freely fitted calendar effects. Forecasting then conditions the entire process on historical and current evidence, including later cohorts and events outside a reporting pool. Residual calendar uncertainty couples distinct events and cohorts, while event uncertainty couples sibling claims. A numerically plausible event-only calculation can misstate conditional reserves, temporal covariance and pooled attachment risk. The core difficulty is reliable inference for this nonlinear latent process and its joint predictive distribution."
+solution_explanation = "The reference integrates each event's product of population-mixture observation likelihoods over its event effect, then integrates the Gaussian calendar chain with normalized forward/backward quadrature. Analytic likelihood scores and posterior transition scores fit the common parameters from historical observations. A second smoothing pass includes current observations at fixed fitted parameters. Capped conditional moments, event posterior integration and posterior calendar transitions give claim moments and pool covariances. Repeated fixed-seed Sobol predictive samples retain the joint calendar and event effects, residual severity/development correlation, policy-cap atoms and strict attachment boundary."
+verification_explanation = "At verify time, tests/test_outputs.py only parses /app/reserves.json, checks exact JSON keys, sorted unique identifiers, finite nonnegative amounts and standard deviations, and probabilities in [0,1], then compares every requested statistic with protected, precomputed /tests/ground_truth.json. Amounts and standard deviations use max(25 USD, 1% of the reference magnitude); probabilities use absolute error <=0.005. The dollar floor covers rounding and small absolute numerical errors; the relative margin gives larger reserves and uncertainties a proportional error budget for optimizer convergence, quadrature and predictive moment approximation. Calibration checks found that the separately implemented uniform-grid posterior forecasts differed by less than 5% of every disclosed tolerance, with maximum monetary discrepancy 56.87 USD and probability discrepancy below 0.000248. The four fixed-seed reference scrambles had maximum probability spread below 0.000440; the 0.005 probability margin is over eleven times that spread and over twenty times the posterior cross-check difference, permitting reasonable integration or sampling variation while requiring risk within half a percentage point. Quadrature refinement changed the fitted historical negative log-likelihood by less than 0.000001. solution/check_reference.py separately implements observation likelihoods and calendar filtering, and shares the predictive sampler; its independence concerns likelihood implementation, posterior integration and filtering. These checks validate the reference during development and are not run by the verifier, which never executes submitted code."
+
+[agent]
+timeout_sec = 28800.0
+
+[verifier]
+timeout_sec = 120.0
+environment_mode = "separate"
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0

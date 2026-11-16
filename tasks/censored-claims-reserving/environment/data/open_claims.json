@@ -1,0 +1,167 @@
+{
+  "claims": [
+    {
+      "claim_id": "C-25-01-1"
+    },
+    {
+      "claim_id": "C-25-01-4"
+    },
+    {
+      "claim_id": "C-27-01-1"
+    },
+    {
+      "claim_id": "C-27-01-3"
+    },
+    {
+      "claim_id": "C-29-01-3"
+    },
+    {
+      "claim_id": "C-29-02-1"
+    },
+    {
+      "claim_id": "C-29-02-2"
+    },
+    {
+      "claim_id": "C-29-02-3"
+    },
+    {
+      "claim_id": "C-30-01-2"
+    },
+    {
+      "claim_id": "C-30-01-3"
+    },
+    {
+      "claim_id": "C-30-02-1"
+    },
+    {
+      "claim_id": "C-30-02-2"
+    },
+    {
+      "claim_id": "C-30-02-3"
+    }
+  ],
+  "portfolios": [
+    {
+      "portfolio_id": "C-25-01-OPEN",
+      "claim_ids": [
+        "C-25-01-1",
+        "C-25-01-4"
+      ],
+      "attachment_usd": 296000
+    },
+    {
+      "portfolio_id": "C-27-01-OPEN",
+      "claim_ids": [
+        "C-27-01-1",
+        "C-27-01-3"
+      ],
+      "attachment_usd": 296000
+    },
+    {
+      "portfolio_id": "C-29-02-OPEN",
+      "claim_ids": [
+        "C-29-02-1",
+        "C-29-02-2",
+        "C-29-02-3"
+      ],
+      "attachment_usd": 332000
+    },
+    {
+      "portfolio_id": "C-30-01-OPEN",
+      "claim_ids": [
+        "C-30-01-2",
+        "C-30-01-3"
+      ],
+      "attachment_usd": 520000
+    },
+    {
+      "portfolio_id": "C-30-02-OPEN",
+      "claim_ids": [
+        "C-30-02-1",
+        "C-30-02-2",
+        "C-30-02-3"
+      ],
+      "attachment_usd": 436000
+    },
+    {
+      "portfolio_id": "COHORT-25",
+      "claim_ids": [
+        "C-25-01-1",
+        "C-25-01-4"
+      ],
+      "attachment_usd": 222000
+    },
+    {
+      "portfolio_id": "COHORT-27",
+      "claim_ids": [
+        "C-27-01-1",
+        "C-27-01-3"
+      ],
+      "attachment_usd": 222000
+    },
+    {
+      "portfolio_id": "COHORT-29",
+      "claim_ids": [
+        "C-29-01-3",
+        "C-29-02-1",
+        "C-29-02-2",
+        "C-29-02-3"
+      ],
+      "attachment_usd": 369000
+    },
+    {
+      "portfolio_id": "COHORT-30",
+      "claim_ids": [
+        "C-30-01-2",
+        "C-30-01-3",
+        "C-30-02-1",
+        "C-30-02-2",
+        "C-30-02-3"
+      ],
+      "attachment_usd": 717000
+    },
+    {
+      "portfolio_id": "CROSS-1",
+      "claim_ids": [
+        "C-25-01-1",
+        "C-29-02-1"
+      ],
+      "attachment_usd": 259000
+    },
+    {
+      "portfolio_id": "CROSS-2",
+      "claim_ids": [
+        "C-27-01-1",
+        "C-30-01-2"
+      ],
+      "attachment_usd": 259000
+    },
+    {
+      "portfolio_id": "CROSS-3",
+      "claim_ids": [
+        "C-29-01-3",
+        "C-30-02-1"
+      ],
+      "attachment_usd": 217000
+    },
+    {
+      "portfolio_id": "ALL-CURRENT",
+      "claim_ids": [
+        "C-25-01-1",
+        "C-25-01-4",
+        "C-27-01-1",
+        "C-27-01-3",
+        "C-29-01-3",
+        "C-29-02-1",
+        "C-29-02-2",
+        "C-29-02-3",
+        "C-30-01-2",
+        "C-30-01-3",
+        "C-30-02-1",
+        "C-30-02-2",
+        "C-30-02-3"
+      ],
+      "attachment_usd": 1530000
+    }
+  ]
+}

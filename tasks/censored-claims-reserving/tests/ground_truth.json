@@ -1,0 +1,149 @@
+{
+  "claims": [
+    {
+      "claim_id": "C-25-01-1",
+      "expected_unpaid_indemnity_usd": 432881.0954746535,
+      "standard_deviation_usd": 182079.55788229118
+    },
+    {
+      "claim_id": "C-25-01-4",
+      "expected_unpaid_indemnity_usd": 53337.8648995258,
+      "standard_deviation_usd": 34401.32278143809
+    },
+    {
+      "claim_id": "C-27-01-1",
+      "expected_unpaid_indemnity_usd": 53846.33776485486,
+      "standard_deviation_usd": 35410.4697332224
+    },
+    {
+      "claim_id": "C-27-01-3",
+      "expected_unpaid_indemnity_usd": 83281.82083052231,
+      "standard_deviation_usd": 88879.41835467998
+    },
+    {
+      "claim_id": "C-29-01-3",
+      "expected_unpaid_indemnity_usd": 81500.76314164771,
+      "standard_deviation_usd": 106298.59785741953
+    },
+    {
+      "claim_id": "C-29-02-1",
+      "expected_unpaid_indemnity_usd": 52695.496742428826,
+      "standard_deviation_usd": 34884.12637643851
+    },
+    {
+      "claim_id": "C-29-02-2",
+      "expected_unpaid_indemnity_usd": 193666.67781142393,
+      "standard_deviation_usd": 198342.96804025295
+    },
+    {
+      "claim_id": "C-29-02-3",
+      "expected_unpaid_indemnity_usd": 52695.496742428826,
+      "standard_deviation_usd": 34884.12637643851
+    },
+    {
+      "claim_id": "C-30-01-2",
+      "expected_unpaid_indemnity_usd": 90328.17477380397,
+      "standard_deviation_usd": 131409.06334065137
+    },
+    {
+      "claim_id": "C-30-01-3",
+      "expected_unpaid_indemnity_usd": 100507.92864430015,
+      "standard_deviation_usd": 137309.5559701725
+    },
+    {
+      "claim_id": "C-30-02-1",
+      "expected_unpaid_indemnity_usd": 99770.84983527975,
+      "standard_deviation_usd": 87897.15172612427
+    },
+    {
+      "claim_id": "C-30-02-2",
+      "expected_unpaid_indemnity_usd": 138167.42219052342,
+      "standard_deviation_usd": 183467.5768914701
+    },
+    {
+      "claim_id": "C-30-02-3",
+      "expected_unpaid_indemnity_usd": 86488.64727623906,
+      "standard_deviation_usd": 85466.10174368731
+    }
+  ],
+  "portfolios": [
+    {
+      "portfolio_id": "ALL-CURRENT",
+      "expected_unpaid_indemnity_usd": 1519168.5761276318,
+      "standard_deviation_usd": 464534.06012754387,
+      "probability_above_attachment": 0.45417726039886475
+    },
+    {
+      "portfolio_id": "C-25-01-OPEN",
+      "expected_unpaid_indemnity_usd": 486218.9603741793,
+      "standard_deviation_usd": 186795.50562248836,
+      "probability_above_attachment": 0.8027089834213257
+    },
+    {
+      "portfolio_id": "C-27-01-OPEN",
+      "expected_unpaid_indemnity_usd": 137128.15859537717,
+      "standard_deviation_usd": 98519.02558855378,
+      "probability_above_attachment": 0.06340920925140381
+    },
+    {
+      "portfolio_id": "C-29-02-OPEN",
+      "expected_unpaid_indemnity_usd": 299057.6712962815,
+      "standard_deviation_usd": 207758.0519087774,
+      "probability_above_attachment": 0.3415815830230713
+    },
+    {
+      "portfolio_id": "C-30-01-OPEN",
+      "expected_unpaid_indemnity_usd": 190836.10341810412,
+      "standard_deviation_usd": 194909.52778507493,
+      "probability_above_attachment": 0.07717502117156982
+    },
+    {
+      "portfolio_id": "C-30-02-OPEN",
+      "expected_unpaid_indemnity_usd": 324426.9193020421,
+      "standard_deviation_usd": 229592.78366907232,
+      "probability_above_attachment": 0.26410186290740967
+    },
+    {
+      "portfolio_id": "COHORT-25",
+      "expected_unpaid_indemnity_usd": 486218.9603741793,
+      "standard_deviation_usd": 186795.50562248836,
+      "probability_above_attachment": 0.9119864702224731
+    },
+    {
+      "portfolio_id": "COHORT-27",
+      "expected_unpaid_indemnity_usd": 137128.15859537717,
+      "standard_deviation_usd": 98519.02558855378,
+      "probability_above_attachment": 0.15021109580993652
+    },
+    {
+      "portfolio_id": "COHORT-29",
+      "expected_unpaid_indemnity_usd": 380558.43443792925,
+      "standard_deviation_usd": 238402.6043687512,
+      "probability_above_attachment": 0.4296756982803345
+    },
+    {
+      "portfolio_id": "COHORT-30",
+      "expected_unpaid_indemnity_usd": 515263.0227201462,
+      "standard_deviation_usd": 312201.08713294374,
+      "probability_above_attachment": 0.23068535327911377
+    },
+    {
+      "portfolio_id": "CROSS-1",
+      "expected_unpaid_indemnity_usd": 485576.5922170823,
+      "standard_deviation_usd": 185541.4470138353,
+      "probability_above_attachment": 0.8623366355895996
+    },
+    {
+      "portfolio_id": "CROSS-2",
+      "expected_unpaid_indemnity_usd": 144174.51253865883,
+      "standard_deviation_usd": 136377.4337201694,
+      "probability_above_attachment": 0.15208470821380615
+    },
+    {
+      "portfolio_id": "CROSS-3",
+      "expected_unpaid_indemnity_usd": 181271.61297692743,
+      "standard_deviation_usd": 139164.7776275831,
+      "probability_above_attachment": 0.41986727714538574
+    }
+  ]
+}
